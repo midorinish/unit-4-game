@@ -1,6 +1,4 @@
 $(document).ready(function() {
-  //variables
-
   var counter = 0;
   var wins = 0;
   var losses = 0;
@@ -11,7 +9,7 @@ $(document).ready(function() {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  var guessNumber = randomNum(40, 90);
+  var guessNumber = randomNum(19, 120);
   $("#guess").html(guessNumber);
 
   var crystalOne = randomNum(1, 12);
@@ -22,7 +20,7 @@ $(document).ready(function() {
   function reset() {
     counter = 0;
     $("#guess").html(guessNumber);
-    guessNumber = randomNum(40, 90);
+    guessNumber = randomNum(19, 120);
     $("#guessNumber").text(counter);
     crystalOne = randomNum(1, 12);
     crystalTwo = randomNum(1, 12);
@@ -56,13 +54,13 @@ $(document).ready(function() {
 
   function WinLose() {
     if (counter === guessNumber) {
-      wins += 1;
+      wins++;
       alert("Winner!");
       $(win).text(wins);
       reset();
     } else if (counter > guessNumber) {
-      losses += 1;
-      alert("You suck sooo bad!");
+      losses++;
+      alert("You Lose!");
       $(loss).text(losses);
       reset();
     }

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>jQuery- Crystal Collector Game</title>
+    <title>Crystal Collector Game</title>
 
     <link
       rel="stylesheet"
@@ -20,33 +20,33 @@
       integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
       crossorigin="anonymous"
     ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Advent Pro"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header>
-      <h1><strong>Crystals Collector</strong></h1>
+      <h1><strong>Crystal Collector</strong></h1>
     </header>
 
     <div id="directions">
-      <p>You will be given a random number at the start of the game.</p>
+      <p>At the beginning of each round, you will be given a random number.</p>
 
       <p>
-        There are four crystals below. By clicking on a crystal you will add a
-        specific amount of points to your total score.
+        Each of the four crystals below has a random value. By clicking on each
+        crystal, you will see those values added to eachother.
       </p>
 
       <p>
-        You win the game by matching your total score to random number, you lose
-        the game if your total score goes above the random number.
-      </p>
-
-      <p>The value of each crystal is hidden from you until you click on it.</p>
-
-      <p>
-        Each time when the game starts, the game will change the values of each
-        crystal.
+        Try to win by adding the values of the crystals in order to meet the
+        value of the Random Number. Your wins and losses are tallied at the
+        bottom of the page.
       </p>
     </div>
+    <br />
 
     <div id="gemDiv">
       <img
@@ -81,7 +81,6 @@
 
       <div class="winsloss">
         <h2><strong>Wins: </strong> <span id="win"></span></h2>
-        <br />
         <h2><strong>Losses: </strong> <span id="loss"></span></h2>
       </div>
     </div>
